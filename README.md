@@ -1,1 +1,2 @@
 # project-2
+Created a basic full CRUD app, there was much that I wanted to do that I didn't get to because I was going through a bad time. Scrapped my project and reset three different times. Wanted to add a way to filter submissions through the map input i.e (if map == "ascent", it would be put in some folder/index for that map)
