@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../public/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <title></title>
+    </head>
+    <body style = "background: url(https://images7.alphacoders.com/108/thumb-1920-1081933.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;">
+    <div class="container-fluid text-center">
+        <nav>
+            <a href="/strats/new" class="btn-dark rounded-pill">Add a new strategy!</a>
+        </nav>
+        <h1 style="color:white;
+        text-shadow: 2px 2px 5px cyan;
+        ">Strategy index page</h1>
+        <ul>
+            <% for(let i = 0; i < strats.length; i++){ %>
+                <li style="list-style: none;">
+                    <a href="/strats/<%=strats[i].id; %>" class="btn-dark" style="color:white;
+                        text-shadow: 1px 1px 2px cyan;">
+                        <%=strats[i].name; %>
+                    </a>      
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>
